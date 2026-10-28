@@ -55,9 +55,9 @@ export default function About() {
         clearInterval(timer);
 
         // Embed the resume photo so it still shows in the downloaded file
-        let photoSrc = `${window.location.origin}/assets/abhishek-resume.jpg`;
+        let photoSrc = `${window.location.origin}${import.meta.env.BASE_URL}assets/abhishek-resume.jpg`;
         try {
-          const res = await fetch("/assets/abhishek-resume.jpg");
+          const res = await fetch(`${import.meta.env.BASE_URL}assets/abhishek-resume.jpg`);
           const photoBlob = await res.blob();
           photoSrc = await new Promise<string>((resolve, reject) => {
             const reader = new FileReader();
@@ -703,7 +703,7 @@ export default function About() {
           className="flex flex-col items-center"
         >
           <img
-            src="/assets/abhishek.jpg"
+            src={`${import.meta.env.BASE_URL}assets/abhishek.jpg`}
             alt="Abhishek"
             className="
               w-[200px]

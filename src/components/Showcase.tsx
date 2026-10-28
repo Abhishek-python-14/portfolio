@@ -22,14 +22,14 @@ const projects = [
   {
     title: "Local Service Finder",
     tech: "HTML + CSS + JavaScript",
-    thumbnail: "/assets/local-service-finder.png",
+    thumbnail: `${import.meta.env.BASE_URL}assets/local-service-finder.png`,
     github: "https://abhishek-python-14.github.io/local-service-finder/",
     live: true,
   },
   {
     title: "SHRAA - Voice Assistant",
     tech: "Kotlin + Jetpack Compose",
-    thumbnail: "/assets/shraa.png",
+    thumbnail: `${import.meta.env.BASE_URL}assets/shraa.png`,
     github: "https://github.com/Abhishek-python-14/shraa",
     live: false,
   },

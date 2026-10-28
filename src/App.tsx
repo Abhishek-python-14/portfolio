@@ -11,7 +11,7 @@ import { Routes, Route } from "react-router-dom";
 import About from "./pages/About";
 
 
-const favicon = "/favicon.ico";
+const favicon = `${import.meta.env.BASE_URL}favicon.ico`;
 const logos = ["ABHISHEK", "FULL STACK", "DEVELOPER", "AI ENTHUSIAST"];
 
 export default function App() {
