@@ -135,7 +135,7 @@ export default function FrontendDeveloperSection() {
           transition={{ duration: 1, delay: 0.8 }}
           className="mt-6 flex flex-wrap gap-4"
         >
-          {["React.js", "Node.js", "MySQL", "Kotlin"].map((tech) => (
+          {["HTML","CSS", "Node.js", "MySQL", "Kotlin"].map((tech) => (
             <div
               key={tech}
               className="
